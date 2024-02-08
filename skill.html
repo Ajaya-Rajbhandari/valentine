@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Skills</title>
+    <style>
+        .Mine {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .body {
+    padding: 20px;
+    align-content: center;
+  }
+
+        .card {
+            border: 1px solid black;
+            width: 40%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            display:block;
+            align-content: flex-start;
+        }
+        .skill {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:right;
+            margin-bottom: 20px;
+        }
+        .skill-name {
+            font-weight: bold;
+            flex: 2;
+            width: 120px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .skill-level {
+            background-color: lightgrey;
+            height: 10px;
+            width: 160px;
+            border-radius: 5px;
+            overflow:visible;
+            flex: 8;
+            margin-left: 20px;
+        }
+        .skill-percent {
+            background-color: #333;
+            height: 20px;
+            border-radius: 5px;
+            flex: var(--percent);
+        }
+        .skill-percent-number {
+            flex: 1;
+            text-align: right;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Mine"> My Skills</h1>    
+    <div class="card">
+        <div class="header">My Skills</div>
+        <div class="body">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-level">
+              <div class="skill-percent" style="--percent: 90%"></div>
+            </div>
+            <div class="skill-percent-number">90%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-level">
+              <div class="skill-percent" style="--percent: 80%"></div>
+            </div>
+            <div class="skill-percent-number">80%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">
+              <div class="skill-percent" style="--percent: 75%"></div>
+            </div>
+            <div class="skill-percent-number">75%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name"> Chat-GPT</div>
+            <div class="skill-level">
+                <div class="skill-percent" style="--percent: 90%"></div>
+            </div>
+            <div class="skill-percent-number">90%</div>
+          </div>
+        </div>
+      </div>  
+</body>
+</html>
+

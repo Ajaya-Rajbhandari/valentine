@@ -1,0 +1,335 @@
+/* display background color black on navbar scroll */
+/* 
+    This class is used to style the navbar when it is scrolled and has a dark theme.
+    It changes the background color of the navbar to black when it is scrolled.
+*/
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('../imageFIle/night_light.jpg');
+    /* background: url('./imageFIle/night_light.jpg'); */
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+.card {
+ width: 50%;
+ margin: 0 auto;
+ height: 254px;
+ background: #ddda08;
+ padding: 2rem 1.5rem;
+ transition: box-shadow .3s ease, transform .2s ease;
+ text-align: center;
+ 
+
+}
+
+.card-info {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Image*/
+.card-avatar {
+ --size: 60px;
+ background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+ width: var(--size);
+ height: var(--size);
+ border-radius: 50%;
+ transition: transform .2s ease;
+ margin-bottom: 1rem;
+}
+
+
+/*Card footer*/
+.card-social {
+ transform: translateY(200%);
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ opacity: 0;
+ transition: transform .2s ease, opacity .2s ease;
+}
+
+.card-social__item {
+ list-style: none;
+}
+
+.card-social__item svg {
+ display: block;
+ height: 18px;
+ width: 18px;
+ fill: #515F65;
+ cursor: pointer;
+ transition: fill 0.2s ease ,transform 0.2s ease;
+}
+
+/*Text*/
+.card-title {
+ color: #333;
+ font-size: 1.5em;
+ font-weight: 600;
+ line-height: 2rem;
+}
+
+.card-subtitle {
+ color: #859ba8;
+ font-size: 0.8em;
+}
+
+/*Hover*/
+.card:hover {
+ box-shadow: 0 8px 50px #23232333;
+}
+
+.card:hover .card-info {
+ transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+ transform: translateY(100%);
+ opacity: 1;
+}
+
+.card-social__item svg:hover {
+ fill: #232323;
+ transform: scale(1.1);
+}
+
+.card-avatar:hover {
+ transform: scale(1.1);
+}
+/* added responsive display */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 1.71875rem;
+  }
+}
+
+:root {
+  --font-size-small: 55%;
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: var(--font-size-small);
+  }
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline;
+    align-content: flex-start;
+    
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .body {
+    padding: 20px;
+    align-content: center;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: right;
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    width: 120px;
+    font-size: 16px;
+  }
+  
+  .skill-level {
+    width: 160px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .skill-percent {
+    background-color: #333;
+    height: 100%;
+  }
+  
+  .skill-percent-number {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+}
+header {
+	background-color: transparent;
+	color: #fff;
+  width: 50%;
+  margin: 0 auto;
+	padding: 1em;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 1em;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2em;
+}
+
+section {
+	flex: 2;
+	margin-right: 1em;
+}
+
+aside {
+	flex: 1;
+}
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.card-img-top {
+  width: 280px;
+  height: auto;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: .5s;
+}
+.card-img-top:hover {
+  transform: scale(1.35);
+  width: auto;
+  height: auto;
+}
+.mine{
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  display: block;
+  /* text-align: center; */
+  /* padding: 0%; */
+}
+.container{
+  text-align: center;
+}
